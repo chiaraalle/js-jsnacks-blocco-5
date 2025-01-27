@@ -6,3 +6,13 @@ const people = [
 
 // Stampa in console tutti i nomi
 // Risultato: 'Paolo', 'Giulia', 'Marco'
+
+let nomi = "";
+people.forEach((nome, index) => { 
+    nomi += `'${nome.name}'`;
+    if(index < people.length -1){
+        nomi += ","
+    } 
+});
+
+console.log(nomi)
